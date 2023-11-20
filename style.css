@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapgrid {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(2000px, 100vw);
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    padding-top: 37px;
+    width: 144px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - (62px + 35px));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 23px;
+    padding-left: 162px;
+    padding-right: 162px;
+    padding-top: 35px;
+}
+
+.hero> :nth-child(1) {
+    font-family: 'poppins';
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.hero> :nth-child(2) {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.hero> :nth-child(3) {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(76, 74, 74);
+    z-index: 40;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 501;
+    background-color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border-radius: 0.4em;
+    padding: 9px 14px;
+    cursor: pointer;
+}
+
+.btn-red-sm:hover {
+    background-color: rgb(184, 110, 20);
+}
+
+.btn-trans {
+    background: transparent;
+    color: white;
+    border: 0.1px solid rgba(255, 255, 255, 0.306);
+    padding: 8px 36px;
+    outline: none;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding-top: 27px;
+}
+
+.bo {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bo input {
+    height: 50px;
+    width: 400px;
+    background: rgba(23, 23, 23, 0.2);
+    border: 0.1px solid rgba(255, 255, 255, 0.233);
+    border-radius: 0.2em;
+    padding-left: 30px;
+    color: white;
+}
+
+.bo input::placeholder {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.73);
+}
+
+.btn-red:hover {
+    background-color: rgb(12, 204, 230);
+}
+
+.btn-red {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border-radius: 0.4em;
+    height: 58px;
+    width: 200px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    height: 80vh;
+    gap: 84px;
+    padding-bottom: 34px;
+}
+
+@media screen and (max-width:580px) {
+
+
+    .second > .question {
+        width: 247px;
+        font-size: 16px;
+        height: 62px;
+        gap: 34px;
+    }
+
+    .second > :nth-child(1){
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .second > .question > :nth-child(2) {
+        font-size: 21px;
+    }
+
+    .first {
+        flex-wrap: wrap;
+        padding-top: 34px;
+        gap: 0px;
+    }
+
+    .main {
+        height: 800px;
+    }
+
+    .main .box {
+        height: 800px;
+    }
+
+    .one {
+        padding-top: 100px;
+        flex-wrap: wrap-reverse;
+        gap: 34px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 10px;
+        width: 165px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 10px;
+        width: 165px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 10px;
+        width: 165px;
+    }
+
+    nav {
+        width: 250px;
+        justify-content: center;
+    }
+
+    .bo input {
+        width: 185px;
+    }
+
+    .one>.secImg2>img {
+        height: 267px;
+        width: 264px;
+        position: relative;
+    }
+
+    .box img {
+        width: 23px;
+        height: 40px;
+        margin: 9px 9px;
+    }
+
+    .one>.secImg2>.box {
+        height: 78px;
+        width: 239px;
+        background-color: black;
+        border: 1px solid rgba(255, 255, 255, 0.617);
+        border-radius: 0.6em;
+        position: absolute;
+        left: 20px;
+        top: 173px;
+        display: flex;
+        gap: 9px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .bo{
+        gap: 19px;
+    }
+
+    .bo>.btn-red {
+        width: 108px;
+        font-size: 14px;
+        height: 38px;
+    }
+
+    nav {
+        width: 296px;
+        justify-content: space-between;
+    }
+
+    nav img {
+        padding-top: 37px;
+        width: 75px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .btn-trans {
+        background: transparent;
+        color: white;
+        border: 0.1px solid rgba(255, 255, 255, 0.306);
+        padding: 6px 3px;
+        outline: none;
+        border-radius: 0.2em;
+        cursor: pointer;
+    }
+
+    .btn-red-sm {
+        background-color: red;
+        color: white;
+        border-radius: 0.4em;
+        padding: 5px 2px;
+        cursor: pointer;
+    }
+
+    .two>.secImg>.video1 {
+        position: absolute;
+        top: 26px;
+        right: 90px;
+        width: 183px;
+    }
+
+    body  .second{
+        height: 100vh;
+    }
+
+    .third .grid{
+        grid-gap: 40px;
+    }
+}
+
+@media screen and (min-width:580px) and (max-width:968px) {
+    .first {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+    .first>.ha {
+        padding-top: 34px;
+    }
+}
+
+
+@media screen and (max-width:968px) {
+
+    .ya {
+        flex-wrap: wrap;
+    }
+
+    .bo {
+        flex-wrap: wrap;
+
+    }
+
+    .main{
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width : 968px) {
+    .main{
+        background-size: cover;
+    }
+    
+}
+
+
+@media screen and (min-width : 365px) and (max-width : 552px) {
+    .two>.secImg>img {
+        width: 350px;
+    }
+
+}
+
+.first>.ha {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    gap: 15px;
+}
+
+.para1:nth-child(1) {
+    font-size: 48px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+
+.para1:nth-child(2) {
+    font-size: 19px;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 400px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 60px;
+    right: 56px;
+    width: 288px;
+}
+
+.secImg2 {
+    position: relative;
+}
+
+.secImg2 img {
+    height: 375px;
+    width: 500px;
+    position: relative;
+}
+
+.secImg2 .box {
+    height: 107px;
+    width: 318px;
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.617);
+    border-radius: 0.6em;
+    position: absolute;
+    left: 98px;
+    top: 240px;
+    display: flex;
+    gap: 9px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img {
+    width: 66px;
+    height: 66px;
+    margin: 9px 9px;
+}
+
+.ga {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ga> :nth-child(2) {
+    font-size: 12px;
+    color: rgb(97, 97, 241);
+}
+
+.secImg .video1 {
+    position: absolute;
+    top: 26px;
+    right: 90px;
+    width: 235px;
+}
+
+.second {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.second h1 {
+    color: white;
+    font-size: 48px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    margin: 50px auto 20px;
+    text-align: center;
+}
+
+.question {
+    transition: all 0.2s ease-out;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    height: 80px;
+    align-items: center;
+    margin: 0px auto 0px;
+    background-color: #2d2d2d;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.question:hover {
+    background-color: rgba(255, 255, 255, 0.216);
+}
+
+.question> :nth-child(2) {
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ja {
+    color: white;
+    text-align: center;
+}
+
+.ya {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.third {
+    height: 50vh;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    width: 70vw;
+    margin: 60px auto 20px;
+}
+
+.la {
+    padding-bottom: 10px;
+}
+
+.la> :nth-child(2) {
+    text-decoration: underline;
+}
+
+.third> :nth-child(2) {
+    text-decoration: underline;
+}
+
+.third .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    margin: 20px auto;
+}
+
+.small {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-trans2 {
+    background: transparent;
+    color: white;
+    border: 0.1px solid rgba(255, 255, 255, 0.306);
+    padding: 8px 36px;
+    outline: none;
+    border-radius: 0.2em;
+    cursor: pointer;
+    width: 150px;
+    text-decoration: none;
+}
+
+.ua {
+    padding-top: 20px;
+}
+
+@media screen and (max-width:968px) {
+
+    .third .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px;
+        color: white;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 24px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 20px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (min-width:558px) and (max-width:968px) {
+    .one {
+        padding-top: 272px;
+    }
+
+    .two {
+        padding-bottom: 149px;
+    }
+
+    .three {
+        padding-top: 240px;
+    }
+
+    .secImg img {
+        top: 15px;
+    }
+}
